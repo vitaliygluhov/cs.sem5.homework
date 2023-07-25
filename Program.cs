@@ -16,7 +16,7 @@ class Program
             for (int i = 0; i < Arr.Length; i++)
                 if (Arr[i] % 2 == 0)
                     Count++;
-            vg.PrintArr(Arr, "Сгенерирован массив: ");
+            vg.PrintArr(Arr, "\nСгенерирован массив: ");
             Console.WriteLine($"Количество четных: {Count} ");
         }
         Task34();
@@ -33,7 +33,7 @@ class Program
             for (int i = 0; i < Arr.Length; i++)
                 if (i % 2 != 0)
                     Sum += Arr[i];
-            vg.PrintArr(Arr, "Сгенерирован массив: ");
+            vg.PrintArr(Arr, "\nСгенерирован массив: ");
             Console.WriteLine($"Сумма чисел элементов массива с нечетными индексами: {Sum} ");
         }
         Task36();
@@ -54,7 +54,7 @@ class Program
                     Max = Arr[i];
             }
 
-            vg.PrintArr(Arr, "Сгенерирован массив: ");
+            vg.PrintArr(Arr, "\nСгенерирован массив: ");
             Console.WriteLine($"Разница между макс.({Math.Round(Max, 2)}) и мин.({Math.Round(Min, 2)}) значениями: {Math.Round(Max-Min, 2)} ");
         }
         Task38();
