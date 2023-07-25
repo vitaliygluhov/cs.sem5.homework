@@ -1,3 +1,4 @@
+//v1.0
 namespace vgnamespace
 {
     public static class vg
