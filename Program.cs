@@ -19,7 +19,7 @@ class Program
             vg.PrintArr(Arr, "Сгенерирован массив: ");
             Console.WriteLine($"Количество четных: {Count} ");
         }
-        //Task34();
+        Task34();
 
         //Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму 
         //элементов с нечётными индексами.
@@ -31,12 +31,12 @@ class Program
             vg.GenRndArrVal(Arr, -9, 10);
             int Sum = 0;
             for (int i = 0; i < Arr.Length; i++)
-                if (Arr[i] % 2 != 0)
+                if (i % 2 != 0)
                     Sum += Arr[i];
             vg.PrintArr(Arr, "Сгенерирован массив: ");
-            Console.WriteLine($"Сумма нечетных чисел массива: {Sum} ");
+            Console.WriteLine($"Сумма чисел элементов массива с нечетными индексами: {Sum} ");
         }
-        //Task36();
+        Task36();
 
         //Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным 
         //и минимальным элементами массива.
@@ -44,7 +44,7 @@ class Program
         void Task38()
         {
             double[] Arr = new double[20];
-            vg.GenDoubleRndArrVal(Arr, 10, 100);
+            vg.GenRndArrVal(Arr, 10, 100);
             double Min = Arr[0], Max = Arr[0];
             for (int i = 0; i < Arr.Length; i++)
             {
@@ -57,7 +57,7 @@ class Program
             vg.PrintArr(Arr, "Сгенерирован массив: ");
             Console.WriteLine($"Разница между макс.({Math.Round(Max, 2)}) и мин.({Math.Round(Min, 2)}) значениями: {Math.Round(Max-Min, 2)} ");
         }
-        //Task38();
+        Task38();
 
     }
 }
